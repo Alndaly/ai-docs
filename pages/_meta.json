@@ -1,5 +1,6 @@
 {
     "index": "项目介绍",
-    "ai-chat": "AI聊天",
-    "ai-painting": "AI绘画"
+    "image": "图片相关",
+    "text": "文本相关",
+    "video": "视频相关"
 }
