@@ -2,6 +2,11 @@ import { useRouter } from 'next/router';
 import { useConfig } from 'nextra-theme-docs';
 
 export default {
+	useNextSeoProps() {
+		return {
+			titleTemplate: '%s – Human With AI',
+		};
+	},
 	logo: (
 		<>
 			<span className='nx-font-bold nx-flex nx-flex-row nx-gap-2'>
@@ -62,7 +67,10 @@ export default {
 		return (
 			<>
 				<meta property='og:url' content={url} />
-				<meta property='og:title' content={frontMatter.title || 'Human With AI'} />
+				<meta
+					property='og:title'
+					content={frontMatter.title || 'Human With AI'}
+				/>
 				<meta
 					property='og:description'
 					content={frontMatter.description || 'AI相关文档网站'}
