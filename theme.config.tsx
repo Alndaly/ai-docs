@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { useConfig } from 'nextra-theme-docs';
+import { Analytics } from '@vercel/analytics/react';
 
 export default {
 	useNextSeoProps() {
@@ -84,6 +85,11 @@ export default {
 	primaryHue: 166,
 	primarySaturation: 100,
 	footer: {
-		text: <span>{new Date().getFullYear()} © Kinda</span>,
+		text: (
+			<>
+				<span>{new Date().getFullYear()} © Kinda</span>,
+				<Analytics />
+			</>
+		),
 	},
 };
