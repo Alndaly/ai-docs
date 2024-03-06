@@ -1,3 +1,5 @@
 {
-	"ai-painting": "AI绘图"
+	"ai-painting": "AI绘图",
+	"lora": "lora模型训练",
+	"controlnet": "ControlNet"
 }
