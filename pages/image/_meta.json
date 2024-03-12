@@ -1,6 +1,7 @@
 {
-	"ai-painting": "AI绘图",
+	"ai-painting": "AI绘图基础介绍",
 	"lora": "lora模型训练",
 	"controlnet": "ControlNet",
-	"sample": "Sample采样器"
+	"sample": "Sample采样器",
+	"cfg": "cfg参数的意义"
 }
