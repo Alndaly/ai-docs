@@ -1,0 +1,44 @@
+import { Cards, Card, Callout, Steps } from 'nextra/components';
+
+# 如何解决comfyui中工作流乱七八糟难以看清的问题
+
+<iframe style={{width: '100%', height: '500px'}} src="//player.bilibili.com/player.html?isOutside=true&aid=112783693711523&bvid=BV1GpbjePErZ&cid=500001614960129&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+## 应用环境
+
+- ComfyUI https://github.com/comfyanonymous/ComfyUI
+
+## 所需插件
+
+- Anything Everywhere https://github.com/chrisgoringe/cg-use-everywhere
+
+## 步骤
+
+<Steps>
+### 安装插件
+
+```shell
+cd <path to your local comfyui>/custom_nodes
+git clone https://github.com/chrisgoringe/cg-use-everywhere
+```
+
+### 启动/重启ComfyUI
+
+```shell
+cd <path to your local comfyui>
+python main.py
+```
+
+### 使用插件
+
+按住键盘上的`Shift`，按住鼠标从任意输出节点拖出，选择`Anything Everywhere?`。基于目标输入设定`title`等参数。
+
+### 运行工作流即可
+
+</Steps>
+
+## 相关链接
+
+- Anything EveryWhere 插件地址：https://github.com/chrisgoringe/cg-use-everywhere 
+- 正则表达式学习：https://www.runoob.com/regexp/regexp-syntax.html 
+- 正则表达式实验：https://regexr.com/
