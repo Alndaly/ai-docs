@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useConfig } from 'nextra-theme-docs';
 import { Analytics } from '@vercel/analytics/react';
+import Comments from '@components/comments';
 
 export default {
 	useNextSeoProps() {
@@ -82,12 +83,21 @@ export default {
 	toc: {
 		backToTop: true,
 	},
+	main: ({ children }) => {
+		console.log(children);
+		return (
+			<>
+				{children}
+				<Comments />
+			</>
+		);
+	},
 	primaryHue: 166,
 	primarySaturation: 100,
 	footer: {
 		text: (
 			<>
-				<span>{new Date().getFullYear()} © Kinda</span>,
+				<span>{new Date().getFullYear()} © Kinda</span>
 				<Analytics />
 			</>
 		),
