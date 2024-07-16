@@ -144,6 +144,8 @@ Stable Diffusion 和 Novel AI Leaks 模型的对比如下所示。
 
 优化器，一般情况下选择默认的 AdamW8bit 即可，选择 Prodigy（神童）则会自动更新各项学习率，即你只需要把所有的学习率均设置为 1 即可。
 
+<Callout type='warning'>注意，如果是macbook系列，这里不能使用AdamW8bit，需要选择不依赖cuda的优化器比如AdamW。</Callout>
+
 ### Enable buckets
 
 应用分辨率桶，开启这一项后可以不需要对图片做固定尺寸裁剪，多数情况下默认开启。但是太多的桶会影响训练结果，所以尽可能的保持训练图片尺寸一致。
